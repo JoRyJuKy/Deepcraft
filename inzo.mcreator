@@ -9,10 +9,10 @@
       "registry_name": "megalodaunt",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/inzo/entity/MegalodauntEntity.java",
-          "src/main/resources/assets/inzo/models/item/megalodaunt_spawn_egg.json",
           "src/main/java/net/mcreator/inzo/client/renderer/MegalodauntRenderer.java",
-          "src/main/resources/data/inzo/forge/biome_modifier/megalodaunt_biome_modifier.json"
+          "src/main/resources/data/inzo/forge/biome_modifier/megalodaunt_biome_modifier.json",
+          "src/main/java/net/mcreator/inzo/entity/MegalodauntEntity.java",
+          "src/main/resources/assets/inzo/models/item/megalodaunt_spawn_egg.json"
         ]
       },
       "path": "~/Mobs"
@@ -26,8 +26,8 @@
       "registry_name": "umbral_obsidian",
       "metadata": {
         "files": [
-          "src/main/resources/assets/inzo/models/item/umbral_obsidian.json",
-          "src/main/java/net/mcreator/inzo/item/UmbralObsidianItem.java"
+          "src/main/java/net/mcreator/inzo/item/UmbralObsidianItem.java",
+          "src/main/resources/assets/inzo/models/item/umbral_obsidian.json"
         ]
       }
     },
@@ -75,17 +75,17 @@
       "registry_name": "depths",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/inzo/block/DepthsPortalBlock.java",
-          "src/main/resources/data/inzo/dimension_type/depths.json",
-          "src/main/java/net/mcreator/inzo/world/teleporter/DepthsTeleporter.java",
-          "src/main/java/net/mcreator/inzo/world/teleporter/DepthsPortalShape.java",
-          "src/main/java/net/mcreator/inzo/item/DepthsItem.java",
-          "src/main/resources/assets/inzo/blockstates/depths_portal.json",
-          "src/main/resources/assets/inzo/models/block/depths_portal_ew.json",
           "src/main/resources/data/inzo/dimension/depths.json",
-          "src/main/java/net/mcreator/inzo/world/dimension/DepthsDimension.java",
+          "src/main/java/net/mcreator/inzo/world/teleporter/DepthsPortalShape.java",
+          "src/main/resources/assets/inzo/models/block/depths_portal_ns.json",
           "src/main/resources/assets/inzo/models/item/depths.json",
-          "src/main/resources/assets/inzo/models/block/depths_portal_ns.json"
+          "src/main/java/net/mcreator/inzo/world/teleporter/DepthsTeleporter.java",
+          "src/main/resources/data/inzo/dimension_type/depths.json",
+          "src/main/resources/assets/inzo/blockstates/depths_portal.json",
+          "src/main/java/net/mcreator/inzo/world/dimension/DepthsDimension.java",
+          "src/main/java/net/mcreator/inzo/block/DepthsPortalBlock.java",
+          "src/main/resources/assets/inzo/models/block/depths_portal_ew.json",
+          "src/main/java/net/mcreator/inzo/item/DepthsItem.java"
         ]
       }
     },
@@ -98,8 +98,8 @@
       "registry_name": "bell_catalyst",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/inzo/item/BellCatalystItem.java",
-          "src/main/resources/assets/inzo/models/item/bell_catalyst.json"
+          "src/main/resources/assets/inzo/models/item/bell_catalyst.json",
+          "src/main/java/net/mcreator/inzo/item/BellCatalystItem.java"
         ]
       }
     },
@@ -206,8 +206,8 @@
       "registry_name": "resonance_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/inzo/models/item/resonance_1.json",
-          "src/main/java/net/mcreator/inzo/item/Resonance1Item.java"
+          "src/main/java/net/mcreator/inzo/item/Resonance1Item.java",
+          "src/main/resources/assets/inzo/models/item/resonance_1.json"
         ]
       },
       "path": "~/WIP"
@@ -311,8 +311,8 @@
       "registry_name": "resonance_8",
       "metadata": {
         "files": [
-          "src/main/resources/assets/inzo/models/item/resonance_8.json",
-          "src/main/java/net/mcreator/inzo/item/Resonance8Item.java"
+          "src/main/java/net/mcreator/inzo/item/Resonance8Item.java",
+          "src/main/resources/assets/inzo/models/item/resonance_8.json"
         ]
       },
       "path": "~/WIP"
@@ -353,6 +353,20 @@
       }
     },
     {
+      "name": "UseResonance",
+      "type": "keybind",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_resonance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/network/UseResonanceMessage.java"
+        ]
+      },
+      "path": "~/WIP"
+    },
+    {
       "name": "Thresher",
       "type": "animatedentity",
       "sortid": 23,
@@ -383,16 +397,15 @@
       "path": "~/Bells"
     },
     {
-      "name": "UseResonance",
+      "name": "WhirlpoolPlayerCollidesWithThisEntity",
       "type": "procedure",
-      "sortid": 25,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "use_resonance",
+      "registry_name": "depthsportal",
       "metadata": {
-        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/inzo/procedures/UseResonanceProcedure.java"
+          "src/main/java/net/mcreator/inzo/procedures/WhirlpoolPlayerCollidesWithThisEntityProcedure.java"
         ],
         "dependencies": [
           {
@@ -416,8 +429,24 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/Bells"
+      }
+    },
+    {
+      "name": "Whirlpool",
+      "type": "animatedentity",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whirlpool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/whirlpool_spawn_egg.json",
+          "src/main/java/net/mcreator/inzo/entity/WhirlpoolEntity.java",
+          "src/main/java/net/mcreator/inzo/client/renderer/WhirlpoolRenderer.java",
+          "src/main/java/net/mcreator/inzo/entity/model/WhirlpoolModel.java",
+          "src/main/resources/data/inzo/forge/biome_modifier/whirlpool_biome_modifier.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -449,17 +478,19 @@
   "language_map": {
     "en_us": {
       "advancements.soul_resonance.title": "Soul Resonance",
+      "key.inzo.use_resonance": "Use Resonance",
       "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
       "advancements.depthsvisit.title": "The Sound From Below",
       "advancements.thedeep.title": "The deep",
+      "entity.inzo.whirlpool": "Whirlpool",
       "item.inzo.depths": "Umbral Flint",
       "advancements.depthsvisit.descr": "You feel your soul dragging down like a weight, deeper into the depths.",
       "advancements.sharkokiller.title": "Sharko Slayer",
       "item.inzo.umbral_obsidian": "Umbral Obsidian",
       "item.inzo.bell_catalyst": "Resonance Catalyst",
       "item.inzo.megalodaunt_spawn_egg": "Megalodaunt Spawn Egg",
-      "key.inzo.use_resonance_key": "Use Resonance",
       "item.inzo.thresher_spawn_egg": "Thresher Spawn Egg",
+      "item.inzo.whirlpool_spawn_egg": "Whirlpool Spawn Egg",
       "advancements.sharkokiller.descr": "Kill a Megalodaunt",
       "advancements.thedeep.descr": "Desperately try to escape the horrors lurking just beneath the waves.",
       "advancements.soul_resonance.descr": "Your soul has resonated with the Song, now producing its own distinct Tone. This resonance has manifested as the instrument now kept at your hip.",
@@ -481,19 +512,19 @@
     "name": "~",
     "children": [
       {
-        "name": "Mobs",
-        "children": []
-      },
-      {
         "name": "Advancements",
         "children": []
       },
       {
-        "name": "WIP",
+        "name": "Mobs",
         "children": []
       },
       {
         "name": "Bells",
+        "children": []
+      },
+      {
+        "name": "WIP",
         "children": []
       }
     ]
