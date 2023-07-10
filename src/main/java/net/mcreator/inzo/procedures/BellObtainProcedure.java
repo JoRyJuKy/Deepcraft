@@ -1,6 +1,7 @@
 package net.mcreator.inzo.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -42,9 +43,14 @@ public class BellObtainProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level instanceof ServerLevel && _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("inzo:soul_resonance"))).isDone())
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == InzoModItems.BELL_CATALYST.get()) {
+				&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(InzoModItems.BELL_CATALYST.get())) : false)) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(InzoModItems.AWAKENED_RESONANCE_CATALYST.get());
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(InzoModItems.AWAKENED_RESONANCE_CATALYST.get()));

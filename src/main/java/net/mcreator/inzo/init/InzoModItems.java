@@ -40,4 +40,5 @@ public class InzoModItems {
 	public static final RegistryObject<Item> RESONANCE_6 = REGISTRY.register("resonance_6", () -> new Resonance6Item());
 	public static final RegistryObject<Item> RESONANCE_7 = REGISTRY.register("resonance_7", () -> new Resonance7Item());
 	public static final RegistryObject<Item> RESONANCE_8 = REGISTRY.register("resonance_8", () -> new Resonance8Item());
+	public static final RegistryObject<Item> THRESHER_SPAWN_EGG = REGISTRY.register("thresher_spawn_egg", () -> new ForgeSpawnEggItem(InzoModEntities.THRESHER, -1, -1, new Item.Properties()));
 }
