@@ -1,5 +1,6 @@
 package net.mcreator.inzo.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -10,13 +11,14 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
+import net.minecraft.client.Minecraft;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.inzo.init.InzoModItems;
 
 public class BellCatalystItemInHandTickProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double generator_distance = 0;
@@ -29,6 +31,8 @@ public class BellCatalystItemInHandTickProcedure {
 				}
 			}
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 2 && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == InzoModItems.BELL_CATALYST.get()) {
+			if (world.isClientSide())
+				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(InzoModItems.AWAKENED_RESONANCE_CATALYST.get()));
 			{
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {

@@ -33,7 +33,7 @@ public class BellCatalystItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		BellCatalystItemInHandTickProcedure.execute(entity);
+		BellCatalystItemInHandTickProcedure.execute(world, entity);
 		return ar;
 	}
 }

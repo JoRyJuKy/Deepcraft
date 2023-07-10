@@ -98,8 +98,8 @@
       "registry_name": "bell_catalyst",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/inzo/item/BellCatalystItem.java",
-          "src/main/resources/assets/inzo/models/item/bell_catalyst.json"
+          "src/main/resources/assets/inzo/models/item/bell_catalyst.json",
+          "src/main/java/net/mcreator/inzo/item/BellCatalystItem.java"
         ]
       }
     },
@@ -157,6 +157,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }

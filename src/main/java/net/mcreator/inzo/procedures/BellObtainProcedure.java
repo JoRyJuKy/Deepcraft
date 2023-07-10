@@ -47,7 +47,7 @@ public class BellObtainProcedure {
 				event.setCanceled(true);
 			}
 			if (world.isClientSide())
-				Minecraft.getInstance().gameRenderer.displayItemActivation((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
+				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(InzoModItems.AWAKENED_RESONANCE_CATALYST.get()));
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth(entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1);
 			if (world instanceof Level _level) {
