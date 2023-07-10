@@ -23,6 +23,7 @@ public class InzoModTabs {
 		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(InzoModItems.MEGALODAUNT_SPAWN_EGG.get());
 			tabData.accept(InzoModItems.THRESHER_SPAWN_EGG.get());
+			tabData.accept(InzoModItems.WHIRLPOOL_SPAWN_EGG.get());
 		}
 
 		if (tabData.getTab() == CreativeModeTabs.INGREDIENTS) {
