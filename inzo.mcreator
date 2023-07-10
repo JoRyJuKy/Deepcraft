@@ -1,0 +1,373 @@
+{
+  "mod_elements": [
+    {
+      "name": "Megalodaunt",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "megalodaunt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/entity/MegalodauntEntity.java",
+          "src/main/resources/assets/inzo/models/item/megalodaunt_spawn_egg.json",
+          "src/main/java/net/mcreator/inzo/client/renderer/MegalodauntRenderer.java",
+          "src/main/resources/data/inzo/forge/biome_modifier/megalodaunt_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "UmbralObsidian",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "umbral_obsidian",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/umbral_obsidian.json",
+          "src/main/java/net/mcreator/inzo/item/UmbralObsidianItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MegalodauntEntityDies",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "megalodaunt_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/procedures/MegalodauntEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Depths",
+      "type": "dimension",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depths",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/block/DepthsPortalBlock.java",
+          "src/main/resources/data/inzo/dimension_type/depths.json",
+          "src/main/java/net/mcreator/inzo/world/teleporter/DepthsTeleporter.java",
+          "src/main/java/net/mcreator/inzo/world/teleporter/DepthsPortalShape.java",
+          "src/main/java/net/mcreator/inzo/item/DepthsItem.java",
+          "src/main/resources/assets/inzo/blockstates/depths_portal.json",
+          "src/main/resources/assets/inzo/models/block/depths_portal_ew.json",
+          "src/main/resources/data/inzo/dimension/depths.json",
+          "src/main/java/net/mcreator/inzo/world/dimension/DepthsDimension.java",
+          "src/main/resources/assets/inzo/models/item/depths.json",
+          "src/main/resources/assets/inzo/models/block/depths_portal_ns.json"
+        ]
+      }
+    },
+    {
+      "name": "BellCatalyst",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bell_catalyst",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/item/BellCatalystItem.java",
+          "src/main/resources/assets/inzo/models/item/bell_catalyst.json"
+        ]
+      }
+    },
+    {
+      "name": "Depthsvisit",
+      "type": "achievement",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depthsvisit",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/inzo/advancements/depthsvisit.json"
+        ]
+      }
+    },
+    {
+      "name": "SoulResonance",
+      "type": "achievement",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_resonance",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/inzo/advancements/soul_resonance.json"
+        ]
+      }
+    },
+    {
+      "name": "AwakenedResonanceCatalyst",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "awakened_resonance_catalyst",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/awakened_resonance_catalyst.json",
+          "src/main/java/net/mcreator/inzo/item/AwakenedResonanceCatalystItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BellCatalystItemInHandTick",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bell_catalyst_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/procedures/BellCatalystItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thedeep",
+      "type": "achievement",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thedeep",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/inzo/advancements/thedeep.json"
+        ]
+      }
+    },
+    {
+      "name": "Sharkokiller",
+      "type": "achievement",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sharkokiller",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/inzo/advancements/sharkokiller.json"
+        ]
+      }
+    },
+    {
+      "name": "Resonance1",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resonance_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/resonance_1.json",
+          "src/main/java/net/mcreator/inzo/item/Resonance1Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Resonance2",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resonance_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/resonance_2.json",
+          "src/main/java/net/mcreator/inzo/item/Resonance2Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Resonance3",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resonance_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/resonance_3.json",
+          "src/main/java/net/mcreator/inzo/item/Resonance3Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Resonance4",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resonance_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/resonance_4.json",
+          "src/main/java/net/mcreator/inzo/item/Resonance4Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Resonance5",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resonance_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/item/Resonance5Item.java",
+          "src/main/resources/assets/inzo/models/item/resonance_5.json"
+        ]
+      }
+    },
+    {
+      "name": "Resonance6",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resonance_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/item/Resonance6Item.java",
+          "src/main/resources/assets/inzo/models/item/resonance_6.json"
+        ]
+      }
+    },
+    {
+      "name": "Resonance7",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resonance_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/item/Resonance7Item.java",
+          "src/main/resources/assets/inzo/models/item/resonance_7.json"
+        ]
+      }
+    },
+    {
+      "name": "Resonance8",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resonance_8",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/resonance_8.json",
+          "src/main/java/net/mcreator/inzo/item/Resonance8Item.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "megalodauntroar",
+      "files": [
+        "sharkoroar"
+      ],
+      "category": "hostile",
+      "subtitle": "Megalodaunt Roars"
+    },
+    {
+      "name": "bell",
+      "files": [
+        "deepwoken_bell_resonance_obtain_sound_effect"
+      ],
+      "category": "player",
+      "subtitle": "Resonance is obtained"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "advancements.soul_resonance.title": "Soul Resonance",
+      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
+      "advancements.depthsvisit.title": "The Sound From Below",
+      "advancements.thedeep.title": "The deep",
+      "item.inzo.depths": "Depths Portal Igniter",
+      "advancements.depthsvisit.descr": "You feel your soul dragging down like a weight, deeper into the depths.",
+      "advancements.sharkokiller.title": "Sharko Slayer",
+      "item.inzo.umbral_obsidian": "Umbral Obsidian",
+      "item.inzo.bell_catalyst": "Resonance Catalyst",
+      "item.inzo.megalodaunt_spawn_egg": "Megalodaunt Spawn Egg",
+      "advancements.sharkokiller.descr": "Kill a Megalodaunt",
+      "advancements.thedeep.descr": "Desperately try to escape the horrors lurking just beneath the waves.",
+      "advancements.soul_resonance.descr": "Your soul has resonated with the Song, now producing its own distinct Tone. This resonance has manifested as the instrument now kept at your hip.",
+      "item.inzo.resonance_2": "Resonance",
+      "item.inzo.resonance_3": "Resonance",
+      "item.inzo.resonance_4": "Resonance",
+      "item.inzo.resonance_5": "Resonance",
+      "item.inzo.resonance_6": "Resonance",
+      "item.inzo.resonance_7": "Resonance",
+      "item.inzo.resonance_8": "Resonance",
+      "subtitles.bell": "Resonance is obtained",
+      "subtitles.megalodauntroar": "Megalodaunt Roars",
+      "entity.inzo.megalodaunt": "Megalodaunt",
+      "item.inzo.resonance_1": "Resonance"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "inzo",
+    "modName": "inzo",
+    "version": "1.0.0",
+    "author": "bustw, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.inzo",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

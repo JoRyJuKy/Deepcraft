@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "inzo:block/depths_portal_ew"
+    },
+    "axis=x": {
+      "model": "inzo:block/depths_portal_ns"
+    }
+  }
+}

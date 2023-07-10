@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:coal_ore"
+    },
+    "title": {
+      "translate": "advancements.soul_resonance.title"
+    },
+    "description": {
+      "translate": "advancements.soul_resonance.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "soul_resonance": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "inzo:depthsvisit"
+}

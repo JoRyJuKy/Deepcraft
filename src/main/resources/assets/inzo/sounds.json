@@ -1,0 +1,20 @@
+{
+  "megalodauntroar": {
+    "subtitle": "subtitles.megalodauntroar",
+    "sounds": [
+      {
+        "name": "inzo:sharkoroar",
+        "stream": false
+      }
+    ]
+  },
+  "bell": {
+    "subtitle": "subtitles.bell",
+    "sounds": [
+      {
+        "name": "inzo:deepwoken_bell_resonance_obtain_sound_effect",
+        "stream": false
+      }
+    ]
+  }
+}

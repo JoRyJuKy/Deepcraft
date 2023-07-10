@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:birch_wood"
+    },
+    "title": {
+      "translate": "advancements.depthsvisit.title"
+    },
+    "description": {
+      "translate": "advancements.depthsvisit.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "depthsvisit": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "inzo:depths"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "inzo:thedeep"
+}

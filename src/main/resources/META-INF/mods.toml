@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[45,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="inzo"
+version="1.0.0"
+displayName="inzo"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="bustw, MCreator"
+
+[[dependencies.inzo]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
