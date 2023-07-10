@@ -1,24 +1,26 @@
 package net.mcreator.inzo.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
+import net.minecraft.world.scores.criteria.ObjectiveCriteria;
+import net.minecraft.world.scores.Scoreboard;
+import net.minecraft.world.scores.Objective;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 import net.minecraft.advancements.AdvancementProgress;
@@ -44,17 +46,17 @@ public class BellObtainProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		double diamonds = 0;
-		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level instanceof ServerLevel && _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("inzo:soul_resonance"))).isDone())
-				&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(InzoModItems.BELL_CATALYST.get())) : false)
-				&& (entity.level.dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("inzo:depths")))) {
+		if (0 == new Object() {
+			public int getScore(String score, Entity _ent) {
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective(score);
+				if (_so != null)
+					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
+				return 0;
+			}
+		}.getScore("deepcraft_bell_data", entity) && (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(InzoModItems.BELL_CATALYST.get())) : false)) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
-			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(InzoModItems.AWAKENED_RESONANCE_CATALYST.get());
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(InzoModItems.AWAKENED_RESONANCE_CATALYST.get()));
@@ -78,6 +80,14 @@ public class BellObtainProcedure {
 					for (String criteria : _ap.getRemainingCriteria())
 						_player.getAdvancements().award(_adv, criteria);
 				}
+			}
+			{
+				Entity _ent = entity;
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective("deepcraft_bell_data");
+				if (_so == null)
+					_so = _sc.addObjective("deepcraft_bell_data", ObjectiveCriteria.DUMMY, Component.literal("deepcraft_bell_data"), ObjectiveCriteria.RenderType.INTEGER);
+				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(Mth.nextInt(RandomSource.create(), 1, 8));
 			}
 		}
 	}

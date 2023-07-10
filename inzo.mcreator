@@ -380,8 +380,7 @@
           "src/main/java/net/mcreator/inzo/client/renderer/ThresherRenderer.java",
           "src/main/resources/assets/inzo/models/item/thresher_spawn_egg.json"
         ]
-      },
-      "path": "~/Mobs"
+      }
     },
     {
       "name": "WhirlpoolPlayerCollidesWithThisEntity",
@@ -434,9 +433,30 @@
           "src/main/resources/data/inzo/forge/biome_modifier/whirlpool_biome_modifier.json"
         ]
       }
+    },
+    {
+      "name": "UseResonanceKey",
+      "type": "keybind",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_resonance_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/network/UseResonanceKeyMessage.java"
+        ]
+      },
+      "path": "~/Bells"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "bellLastUsed",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
   "sound_elements": [
     {
       "name": "megalodauntroar",
@@ -492,11 +512,15 @@
     "name": "~",
     "children": [
       {
+        "name": "Advancements",
+        "children": []
+      },
+      {
         "name": "Mobs",
         "children": []
       },
       {
-        "name": "Advancements",
+        "name": "Bells",
         "children": []
       },
       {
