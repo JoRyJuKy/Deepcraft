@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.inzo.entity.WhirlpoolEntity;
+import net.mcreator.inzo.entity.ThresherEntity;
 import net.mcreator.inzo.entity.MegalodauntEntity;
 import net.mcreator.inzo.InzoMod;
 

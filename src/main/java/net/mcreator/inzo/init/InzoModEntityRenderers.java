@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.inzo.client.renderer.WhirlpoolRenderer;
+import net.mcreator.inzo.client.renderer.ThresherRenderer;
 import net.mcreator.inzo.client.renderer.MegalodauntRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

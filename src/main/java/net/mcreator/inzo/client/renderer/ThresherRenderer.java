@@ -9,25 +9,25 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
-import net.mcreator.inzo.entity.model.WhirlpoolModel;
-import net.mcreator.inzo.entity.WhirlpoolEntity;
+import net.mcreator.inzo.entity.model.ThresherModel;
+import net.mcreator.inzo.entity.ThresherEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-public class WhirlpoolRenderer extends GeoEntityRenderer<WhirlpoolEntity> {
-	public WhirlpoolRenderer(EntityRendererProvider.Context renderManager) {
-		super(renderManager, new WhirlpoolModel());
-		this.shadowRadius = 0f;
+public class ThresherRenderer extends GeoEntityRenderer<ThresherEntity> {
+	public ThresherRenderer(EntityRendererProvider.Context renderManager) {
+		super(renderManager, new ThresherModel());
+		this.shadowRadius = 0.5f;
 	}
 
 	@Override
-	public RenderType getRenderType(WhirlpoolEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
+	public RenderType getRenderType(ThresherEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
 		return RenderType.entityTranslucent(getTextureLocation(animatable));
 	}
 
 	@Override
-	public void preRender(PoseStack poseStack, WhirlpoolEntity entity, BakedGeoModel model, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red, float green,
+	public void preRender(PoseStack poseStack, ThresherEntity entity, BakedGeoModel model, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red, float green,
 			float blue, float alpha) {
 		float scale = 1f;
 		this.scaleHeight = scale;
