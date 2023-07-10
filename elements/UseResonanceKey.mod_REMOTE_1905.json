@@ -1,0 +1,9 @@
+{
+  "_fv": 43,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Use Resonance",
+    "keyBindingCategoryKey": "gameplay"
+  }
+}
