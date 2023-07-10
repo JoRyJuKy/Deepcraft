@@ -14,7 +14,8 @@
           "src/main/java/net/mcreator/inzo/client/renderer/MegalodauntRenderer.java",
           "src/main/resources/data/inzo/forge/biome_modifier/megalodaunt_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Mobs"
     },
     {
       "name": "UmbralObsidian",
@@ -113,7 +114,8 @@
         "files": [
           "src/main/resources/data/inzo/advancements/depthsvisit.json"
         ]
-      }
+      },
+      "path": "~/Advancements"
     },
     {
       "name": "SoulResonance",
@@ -126,7 +128,8 @@
         "files": [
           "src/main/resources/data/inzo/advancements/soul_resonance.json"
         ]
-      }
+      },
+      "path": "~/Advancements"
     },
     {
       "name": "AwakenedResonanceCatalyst",
@@ -150,9 +153,6 @@
       "locked_code": false,
       "registry_name": "bell_catalyst_item_in_hand_tick",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/inzo/procedures/BellCatalystItemInHandTickProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -172,7 +172,8 @@
         "files": [
           "src/main/resources/data/inzo/advancements/thedeep.json"
         ]
-      }
+      },
+      "path": "~/Advancements"
     },
     {
       "name": "Sharkokiller",
@@ -185,7 +186,8 @@
         "files": [
           "src/main/resources/data/inzo/advancements/sharkokiller.json"
         ]
-      }
+      },
+      "path": "~/Advancements"
     },
     {
       "name": "Resonance1",
@@ -298,6 +300,58 @@
           "src/main/java/net/mcreator/inzo/item/Resonance8Item.java"
         ]
       }
+    },
+    {
+      "name": "BellObtain",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bell_obtain",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/procedures/BellObtainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UseResonance",
+      "type": "keybind",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_resonance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/network/UseResonanceMessage.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -323,10 +377,11 @@
     "en_us": {
       "advancements.soul_resonance.title": "Soul Resonance",
       "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
+      "key.inzo.use_resonance": "Use Resonance",
       "advancements.depthsvisit.title": "The Sound From Below",
       "advancements.thedeep.title": "The deep",
-      "item.inzo.depths": "Depths Portal Igniter",
       "advancements.depthsvisit.descr": "You feel your soul dragging down like a weight, deeper into the depths.",
+      "item.inzo.depths": "Depths Portal Igniter",
       "advancements.sharkokiller.title": "Sharko Slayer",
       "item.inzo.umbral_obsidian": "Umbral Obsidian",
       "item.inzo.bell_catalyst": "Resonance Catalyst",
@@ -349,7 +404,16 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "inzo",
