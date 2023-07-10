@@ -5,6 +5,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.inzo.entity.WhirlpoolEntity;
+import net.mcreator.inzo.entity.ThresherEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
