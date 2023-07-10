@@ -141,9 +141,9 @@ public class ThresherEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.thresherdeepwoken2.new"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("thresher.animation.json"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.thresherdeepwoken2.new"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("thresher.animation.json"));
 		}
 		return PlayState.STOP;
 	}

@@ -405,12 +405,12 @@
   "language_map": {
     "en_us": {
       "advancements.soul_resonance.title": "Soul Resonance",
-      "key.inzo.use_resonance": "Use Resonance",
       "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
+      "key.inzo.use_resonance": "Use Resonance",
       "advancements.depthsvisit.title": "The Sound From Below",
       "advancements.thedeep.title": "The deep",
-      "item.inzo.depths": "Depths Portal Igniter",
       "advancements.depthsvisit.descr": "You feel your soul dragging down like a weight, deeper into the depths.",
+      "item.inzo.depths": "Umbral Flint",
       "advancements.sharkokiller.title": "Sharko Slayer",
       "item.inzo.umbral_obsidian": "Umbral Obsidian",
       "item.inzo.bell_catalyst": "Resonance Catalyst",
