@@ -75,17 +75,17 @@
       "registry_name": "depths",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/inzo/block/DepthsPortalBlock.java",
-          "src/main/resources/data/inzo/dimension_type/depths.json",
-          "src/main/java/net/mcreator/inzo/world/teleporter/DepthsTeleporter.java",
-          "src/main/java/net/mcreator/inzo/world/teleporter/DepthsPortalShape.java",
-          "src/main/java/net/mcreator/inzo/item/DepthsItem.java",
-          "src/main/resources/assets/inzo/blockstates/depths_portal.json",
-          "src/main/resources/assets/inzo/models/block/depths_portal_ew.json",
           "src/main/resources/data/inzo/dimension/depths.json",
-          "src/main/java/net/mcreator/inzo/world/dimension/DepthsDimension.java",
+          "src/main/java/net/mcreator/inzo/world/teleporter/DepthsPortalShape.java",
+          "src/main/resources/assets/inzo/models/block/depths_portal_ns.json",
           "src/main/resources/assets/inzo/models/item/depths.json",
-          "src/main/resources/assets/inzo/models/block/depths_portal_ns.json"
+          "src/main/java/net/mcreator/inzo/world/teleporter/DepthsTeleporter.java",
+          "src/main/resources/data/inzo/dimension_type/depths.json",
+          "src/main/resources/assets/inzo/blockstates/depths_portal.json",
+          "src/main/java/net/mcreator/inzo/world/dimension/DepthsDimension.java",
+          "src/main/java/net/mcreator/inzo/block/DepthsPortalBlock.java",
+          "src/main/resources/assets/inzo/models/block/depths_portal_ew.json",
+          "src/main/java/net/mcreator/inzo/item/DepthsItem.java"
         ]
       }
     },
@@ -98,8 +98,8 @@
       "registry_name": "bell_catalyst",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/inzo/item/BellCatalystItem.java",
-          "src/main/resources/assets/inzo/models/item/bell_catalyst.json"
+          "src/main/resources/assets/inzo/models/item/bell_catalyst.json",
+          "src/main/java/net/mcreator/inzo/item/BellCatalystItem.java"
         ]
       }
     },
@@ -403,7 +403,8 @@
           "src/main/java/net/mcreator/inzo/client/renderer/ThresherRenderer.java",
           "src/main/resources/assets/inzo/models/item/thresher_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Mobs"
     },
     {
       "name": "UseResonanceKey",
@@ -469,6 +470,103 @@
           "src/main/java/net/mcreator/inzo/client/renderer/WhirlpoolRenderer.java",
           "src/main/java/net/mcreator/inzo/entity/WhirlpoolEntity.java"
         ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DeepTurf",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_turf",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/block/deep_turf.json",
+          "src/main/java/net/mcreator/inzo/block/DeepTurfBlock.java",
+          "src/main/resources/assets/inzo/blockstates/deep_turf.json",
+          "src/main/resources/assets/inzo/models/item/deep_turf.json"
+        ]
+      }
+    },
+    {
+      "name": "DeepStone",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/deep_stone.json",
+          "src/main/resources/assets/inzo/models/block/deep_stone.json",
+          "src/main/resources/assets/inzo/blockstates/deep_stone.json",
+          "src/main/java/net/mcreator/inzo/block/DeepStoneBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "DepthsVoid",
+      "type": "fluid",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depths_void",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/depths_void_bucket.json",
+          "src/main/java/net/mcreator/inzo/block/DepthsVoidBlock.java",
+          "src/main/resources/assets/inzo/models/block/depths_void.json",
+          "src/main/resources/assets/inzo/blockstates/depths_void.json",
+          "src/main/java/net/mcreator/inzo/fluid/DepthsVoidFluid.java",
+          "src/main/java/net/mcreator/inzo/fluid/types/DepthsVoidFluidType.java"
+        ]
+      }
+    },
+    {
+      "name": "DepthsVoidMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depths_void_mobplayer_collides_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/procedures/DepthsVoidMobplayerCollidesBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoralForest",
+      "type": "biome",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coral_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/inzo/worldgen/biome/coral_forest.json",
+          "src/main/resources/data/inzo/worldgen/placed_feature/coral_forest_tree.json",
+          "src/main/resources/data/inzo/worldgen/configured_feature/coral_forest_tree.json"
+        ]
       }
     }
   ],
@@ -496,21 +594,34 @@
       ],
       "category": "player",
       "subtitle": "Resonance is obtained"
+    },
+    {
+      "name": "oscillation",
+      "files": [
+        "naktigonis_-_oscillation_deepwoken_ost"
+      ],
+      "category": "music",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
+      "block.inzo.depths_void": "Depths Void",
       "advancements.soul_resonance.title": "Soul Resonance",
-      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
+      "fluid.inzo.depths_void": "Depths Void",
       "key.inzo.use_resonance": "Use Resonance",
+      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
+      "subtitles.oscillation": "",
       "advancements.depthsvisit.title": "The Sound From Below",
       "advancements.thedeep.title": "The deep",
-      "advancements.depthsvisit.descr": "You feel your soul dragging down like a weight, deeper into the depths.",
-      "item.inzo.depths": "Umbral Flint",
       "entity.inzo.whirlpool": "Whirlpool",
+      "item.inzo.depths": "Umbral Flint",
+      "advancements.depthsvisit.descr": "You feel your soul dragging down like a weight, deeper into the depths.",
       "advancements.sharkokiller.title": "Sharko Slayer",
       "item.inzo.umbral_obsidian": "Umbral Obsidian",
       "item.inzo.bell_catalyst": "Resonance Catalyst",
+      "biome.inzo.coral_forest": "Coral Forest",
+      "block.inzo.deep_stone": "Deep Stone",
       "item.inzo.megalodaunt_spawn_egg": "Megalodaunt Spawn Egg",
       "key.inzo.use_resonance_key": "Use Resonance",
       "item.inzo.thresher_spawn_egg": "Thresher Spawn Egg",
@@ -526,6 +637,7 @@
       "item.inzo.resonance_7": "Resonance",
       "item.inzo.resonance_8": "Resonance",
       "subtitles.bell": "Resonance is obtained",
+      "block.inzo.deep_turf": "Deep Turf ",
       "subtitles.megalodauntroar": "Megalodaunt Roars",
       "entity.inzo.megalodaunt": "Megalodaunt",
       "entity.inzo.thresher": "Thresher",

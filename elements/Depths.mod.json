@@ -4,21 +4,25 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "badlands"
+        "value": "CUSTOM:CoralForest"
       }
     ],
     "worldGenType": "Nether like gen",
     "mainFillerBlock": {
-      "value": "Blocks.STRIPPED_CRIMSON_HYPHAE"
+      "value": "CUSTOM:DeepStone"
     },
     "fluidBlock": {
-      "value": "Blocks.WEATHERED_CUT_COPPER_SLAB"
+      "value": "CUSTOM:DepthsVoid"
+    },
+    "airColor": {
+      "value": -15850195,
+      "falpha": 0.0
     },
     "canRespawnHere": false,
-    "hasFog": false,
-    "isDark": false,
+    "hasFog": true,
+    "isDark": true,
     "doesWaterVaporize": false,
-    "sleepResult": "ALLOW",
+    "sleepResult": "DENY",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
     "portalFrame": {
