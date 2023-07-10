@@ -22,22 +22,22 @@
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
     "portalFrame": {
-      "value": "Blocks.REDSTONE_ORE"
+      "value": "Blocks.BEDROCK"
     },
     "portalParticles": {
-      "value": "PORTAL"
+      "value": "SOUL"
     },
-    "portalLuminance": 0,
+    "portalLuminance": 1,
     "portalSound": {
-      "value": "block.portal.ambient"
+      "value": ""
     },
     "enableIgniter": true,
-    "igniterName": "Depths Portal Igniter",
+    "igniterName": "Umbral Flint",
     "igniterTab": {
       "value": "TOOLS"
     },
     "texture": "umbral",
-    "portalTexture": "sharko",
+    "portalTexture": "portaltexture",
     "enablePortal": true
   }
 }

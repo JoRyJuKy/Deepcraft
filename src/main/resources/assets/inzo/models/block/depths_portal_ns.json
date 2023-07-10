@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "inzo:block/sharko",
-    "portal": "inzo:block/sharko"
+    "particle": "inzo:block/portaltexture",
+    "portal": "inzo:block/portaltexture"
   },
   "elements": [
     {
