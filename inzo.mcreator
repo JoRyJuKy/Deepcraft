@@ -318,10 +318,6 @@
             "type": "entity"
           },
           {
-            "name": "amount",
-            "type": "number"
-          },
-          {
             "name": "x",
             "type": "number"
           },
