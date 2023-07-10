@@ -163,7 +163,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/WIP"
     },
     {
       "name": "Thedeep",
@@ -191,7 +192,7 @@
           "src/main/resources/data/inzo/advancements/sharkokiller.json"
         ]
       },
-      "path": "~/Advancements"
+      "path": "~/WIP"
     },
     {
       "name": "Resonance1",
@@ -205,7 +206,8 @@
           "src/main/resources/assets/inzo/models/item/resonance_1.json",
           "src/main/java/net/mcreator/inzo/item/Resonance1Item.java"
         ]
-      }
+      },
+      "path": "~/WIP"
     },
     {
       "name": "Resonance2",
@@ -219,7 +221,8 @@
           "src/main/resources/assets/inzo/models/item/resonance_2.json",
           "src/main/java/net/mcreator/inzo/item/Resonance2Item.java"
         ]
-      }
+      },
+      "path": "~/WIP"
     },
     {
       "name": "Resonance3",
@@ -233,7 +236,8 @@
           "src/main/resources/assets/inzo/models/item/resonance_3.json",
           "src/main/java/net/mcreator/inzo/item/Resonance3Item.java"
         ]
-      }
+      },
+      "path": "~/WIP"
     },
     {
       "name": "Resonance4",
@@ -247,7 +251,8 @@
           "src/main/resources/assets/inzo/models/item/resonance_4.json",
           "src/main/java/net/mcreator/inzo/item/Resonance4Item.java"
         ]
-      }
+      },
+      "path": "~/WIP"
     },
     {
       "name": "Resonance5",
@@ -261,7 +266,8 @@
           "src/main/java/net/mcreator/inzo/item/Resonance5Item.java",
           "src/main/resources/assets/inzo/models/item/resonance_5.json"
         ]
-      }
+      },
+      "path": "~/WIP"
     },
     {
       "name": "Resonance6",
@@ -275,7 +281,8 @@
           "src/main/java/net/mcreator/inzo/item/Resonance6Item.java",
           "src/main/resources/assets/inzo/models/item/resonance_6.json"
         ]
-      }
+      },
+      "path": "~/WIP"
     },
     {
       "name": "Resonance7",
@@ -289,7 +296,8 @@
           "src/main/java/net/mcreator/inzo/item/Resonance7Item.java",
           "src/main/resources/assets/inzo/models/item/resonance_7.json"
         ]
-      }
+      },
+      "path": "~/WIP"
     },
     {
       "name": "Resonance8",
@@ -303,7 +311,8 @@
           "src/main/resources/assets/inzo/models/item/resonance_8.json",
           "src/main/java/net/mcreator/inzo/item/Resonance8Item.java"
         ]
-      }
+      },
+      "path": "~/WIP"
     },
     {
       "name": "BellObtain",
@@ -351,7 +360,8 @@
         "files": [
           "src/main/java/net/mcreator/inzo/network/UseResonanceMessage.java"
         ]
-      }
+      },
+      "path": "~/WIP"
     }
   ],
   "variable_elements": [],
@@ -376,12 +386,12 @@
   "language_map": {
     "en_us": {
       "advancements.soul_resonance.title": "Soul Resonance",
-      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
       "key.inzo.use_resonance": "Use Resonance",
+      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
       "advancements.depthsvisit.title": "The Sound From Below",
       "advancements.thedeep.title": "The deep",
-      "advancements.depthsvisit.descr": "You feel your soul dragging down like a weight, deeper into the depths.",
       "item.inzo.depths": "Depths Portal Igniter",
+      "advancements.depthsvisit.descr": "You feel your soul dragging down like a weight, deeper into the depths.",
       "advancements.sharkokiller.title": "Sharko Slayer",
       "item.inzo.umbral_obsidian": "Umbral Obsidian",
       "item.inzo.bell_catalyst": "Resonance Catalyst",
@@ -411,6 +421,10 @@
       },
       {
         "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "WIP",
         "children": []
       }
     ]

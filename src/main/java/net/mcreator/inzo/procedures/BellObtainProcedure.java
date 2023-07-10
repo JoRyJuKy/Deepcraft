@@ -42,7 +42,7 @@ public class BellObtainProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level instanceof ServerLevel && _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("inzo:soul_resonance"))).isDone())
-				&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(InzoModItems.BELL_CATALYST.get())) : false)) {
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == InzoModItems.BELL_CATALYST.get()) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
 			}
