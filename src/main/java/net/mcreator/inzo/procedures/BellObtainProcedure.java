@@ -17,6 +17,8 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 import net.minecraft.advancements.AdvancementProgress;
@@ -42,8 +44,10 @@ public class BellObtainProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		double diamonds = 0;
 		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level instanceof ServerLevel && _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("inzo:soul_resonance"))).isDone())
-				&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(InzoModItems.BELL_CATALYST.get())) : false)) {
+				&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(InzoModItems.BELL_CATALYST.get())) : false)
+				&& (entity.level.dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("inzo:depths")))) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
 			}
