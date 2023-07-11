@@ -39,6 +39,16 @@
       "offset": 0,
       "height": 3
     },
-    "decorators": []
+    "decorators": [
+      {
+        "type": "inzo:coral_forest_tree_fruit_decorator"
+      },
+      {
+        "type": "inzo:coral_forest_tree_trunk_decorator"
+      },
+      {
+        "type": "inzo:coral_forest_tree_leave_decorator"
+      }
+    ]
   }
 }
