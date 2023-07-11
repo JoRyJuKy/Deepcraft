@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "badlands",
+          "biome": "inzo:coral_forest",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -27,16 +27,12 @@
       "aquifers_enabled": false,
       "ore_veins_enabled": false,
       "default_block": {
-        "Name": "minecraft:stripped_crimson_hyphae",
-        "Properties": {
-          "axis": "y"
-        }
+        "Name": "inzo:deep_stone"
       },
       "default_fluid": {
-        "Name": "minecraft:weathered_cut_copper_slab",
+        "Name": "inzo:depths_void",
         "Properties": {
-          "type": "bottom",
-          "waterlogged": "false"
+          "level": "0"
         }
       },
       "spawn_target": [],
@@ -177,7 +173,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "badlands"
+                "inzo:coral_forest"
               ]
             },
             "then_run": {
@@ -206,14 +202,14 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:red_sand"
+                            "Name": "inzo:deep_turf"
                           }
                         }
                       },
                       {
                         "type": "minecraft:block",
                         "result_state": {
-                          "Name": "minecraft:gravel"
+                          "Name": "inzo:deep_stone"
                         }
                       }
                     ]
@@ -231,7 +227,7 @@
                   "then_run": {
                     "type": "minecraft:block",
                     "result_state": {
-                      "Name": "minecraft:air"
+                      "Name": "inzo:deep_stone"
                     }
                   }
                 }
@@ -241,10 +237,7 @@
           {
             "type": "minecraft:block",
             "result_state": {
-              "Name": "minecraft:stripped_crimson_hyphae",
-              "Properties": {
-                "axis": "y"
-              }
+              "Name": "inzo:deep_stone"
             }
           }
         ]

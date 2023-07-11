@@ -33,5 +33,10 @@ public class InzoModTabs {
 		if (tabData.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(InzoModItems.DEPTHS.get());
 		}
+
+		if (tabData.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(InzoModBlocks.DEEP_TURF.get().asItem());
+			tabData.accept(InzoModBlocks.DEEP_STONE.get().asItem());
+		}
 	}
 }

@@ -9,7 +9,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.inzo.item.UmbralObsidianItem;
 import net.mcreator.inzo.item.Resonance8Item;
@@ -42,4 +44,10 @@ public class InzoModItems {
 	public static final RegistryObject<Item> RESONANCE_8 = REGISTRY.register("resonance_8", () -> new Resonance8Item());
 	public static final RegistryObject<Item> THRESHER_SPAWN_EGG = REGISTRY.register("thresher_spawn_egg", () -> new ForgeSpawnEggItem(InzoModEntities.THRESHER, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> WHIRLPOOL_SPAWN_EGG = REGISTRY.register("whirlpool_spawn_egg", () -> new ForgeSpawnEggItem(InzoModEntities.WHIRLPOOL, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> DEEP_TURF = block(InzoModBlocks.DEEP_TURF);
+	public static final RegistryObject<Item> DEEP_STONE = block(InzoModBlocks.DEEP_STONE);
+
+	private static RegistryObject<Item> block(RegistryObject<Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
 }

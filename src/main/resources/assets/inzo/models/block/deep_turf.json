@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "inzo:block/deepturfbottom",
+    "up": "inzo:block/depths",
+    "north": "inzo:block/deepturfside",
+    "east": "inzo:block/deepturfside",
+    "south": "inzo:block/deepturfside",
+    "west": "inzo:block/deepturfside",
+    "particle": "inzo:block/deepturfbottom"
+  },
+  "render_type": "solid"
+}

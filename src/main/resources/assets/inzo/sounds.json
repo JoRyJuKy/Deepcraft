@@ -16,5 +16,13 @@
         "stream": false
       }
     ]
+  },
+  "oscillation": {
+    "sounds": [
+      {
+        "name": "inzo:naktigonis_-_oscillation_deepwoken_ost",
+        "stream": true
+      }
+    ]
   }
 }
