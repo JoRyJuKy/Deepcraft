@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.inzo.block.VoidtouchedDeepstoneBlock;
 import net.mcreator.inzo.block.UmbralStoneBlock;
+import net.mcreator.inzo.block.LensBlock;
 import net.mcreator.inzo.block.DepthsVoidBlock;
 import net.mcreator.inzo.block.DepthsPortalBlock;
 import net.mcreator.inzo.block.DeepTurfBlock;
@@ -26,4 +27,5 @@ public class InzoModBlocks {
 	public static final RegistryObject<Block> DEPTHS_VOID = REGISTRY.register("depths_void", () -> new DepthsVoidBlock());
 	public static final RegistryObject<Block> VOIDTOUCHED_DEEPSTONE = REGISTRY.register("voidtouched_deepstone", () -> new VoidtouchedDeepstoneBlock());
 	public static final RegistryObject<Block> UMBRAL_STONE = REGISTRY.register("umbral_stone", () -> new UmbralStoneBlock());
+	public static final RegistryObject<Block> LENS = REGISTRY.register("lens", () -> new LensBlock());
 }

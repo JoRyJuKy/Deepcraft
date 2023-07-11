@@ -15,6 +15,10 @@ public class InzoModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
 
+		if (tabData.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(InzoModBlocks.LENS.get().asItem());
+		}
+
 		if (tabData.getTab() == CreativeModeTabs.COMBAT) {
 			tabData.accept(InzoModItems.BELL_CATALYST.get());
 			tabData.accept(InzoModItems.AWAKENED_RESONANCE_CATALYST.get());
@@ -29,6 +33,8 @@ public class InzoModTabs {
 		if (tabData.getTab() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(InzoModItems.UMBRAL_OBSIDIAN.get());
 			tabData.accept(InzoModItems.VOIDSTONE_SHARD.get());
+			tabData.accept(InzoModItems.LIGHT_CORE.get());
+			tabData.accept(InzoModItems.RADIANT_SHARD.get());
 		}
 
 		if (tabData.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

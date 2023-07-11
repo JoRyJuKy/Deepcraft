@@ -629,6 +629,111 @@
         ]
       },
       "path": "~/The Depths"
+    },
+    {
+      "name": "LightCore",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_core",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/light_core.json",
+          "src/main/java/net/mcreator/inzo/item/LightCoreItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Lensgui",
+      "type": "gui",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lensgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/network/LensguiButtonMessage.java",
+          "src/main/java/net/mcreator/inzo/client/gui/LensguiScreen.java",
+          "src/main/java/net/mcreator/inzo/world/inventory/LensguiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "LensFunction",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lens_function",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/procedures/LensFunctionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lens",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lens",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/lens.json",
+          "src/main/resources/assets/inzo/models/block/lens.json",
+          "src/main/resources/assets/inzo/blockstates/lens.json",
+          "src/main/java/net/mcreator/inzo/block/LensBlock.java",
+          "src/main/java/net/mcreator/inzo/block/entity/LensBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "RadiantShard",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiant_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/radiant_shard.json",
+          "src/main/java/net/mcreator/inzo/item/RadiantShardItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RadiantShardRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiant_shard_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/inzo/recipes/radiant_shard_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LightCoreRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_core_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/inzo/recipes/light_core_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -671,9 +776,10 @@
       "item.inzo.voidstone_shard": "Voidstone Shard",
       "advancements.soul_resonance.title": "Soul Resonance",
       "fluid.inzo.depths_void": "Depths Void",
-      "key.inzo.use_resonance": "Use Resonance",
-      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
       "subtitles.oscillation": "",
+      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
+      "key.inzo.use_resonance": "Use Resonance",
+      "gui.inzo.lensgui.label_lens": "Lens",
       "advancements.depthsvisit.title": "The Sound From Below",
       "advancements.thedeep.title": "The deep",
       "entity.inzo.whirlpool": "Whirlpool",
@@ -682,8 +788,10 @@
       "advancements.sharkokiller.title": "Sharko Slayer",
       "item.inzo.umbral_obsidian": "Umbral Obsidian",
       "item.inzo.bell_catalyst": "Resonance Catalyst",
+      "gui.inzo.lensgui.button_transfer_energy": "Transfer Energy",
       "biome.inzo.coral_forest": "Coral Forest",
       "block.inzo.deep_stone": "Deep Stone",
+      "item.inzo.radiant_shard": "Radiant Shard",
       "block.inzo.voidtouched_deepstone": "Voidtouched Deepstone",
       "item.inzo.megalodaunt_spawn_egg": "Megalodaunt Spawn Egg",
       "key.inzo.use_resonance_key": "Use Resonance",
@@ -693,6 +801,7 @@
       "advancements.thedeep.descr": "Desperately try to escape the horrors lurking just beneath the waves.",
       "advancements.soul_resonance.descr": "Your soul has resonated with the Song, now producing its own distinct Tone. This resonance has manifested as the instrument now kept at your hip.",
       "item.inzo.resonance_2": "Resonance",
+      "item.inzo.light_core": "Light Core",
       "item.inzo.resonance_3": "Resonance",
       "item.inzo.resonance_4": "Resonance",
       "block.inzo.umbral_stone": "Umbral Stone",
@@ -702,6 +811,7 @@
       "item.inzo.resonance_8": "Resonance",
       "subtitles.bell": "Resonance is obtained",
       "block.inzo.deep_turf": "Deep Turf ",
+      "block.inzo.lens": "Lens",
       "subtitles.megalodauntroar": "Megalodaunt Roars",
       "entity.inzo.megalodaunt": "Megalodaunt",
       "entity.inzo.thresher": "Thresher",

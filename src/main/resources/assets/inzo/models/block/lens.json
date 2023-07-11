@@ -1,0 +1,9 @@
+{
+  "parent": "inzo:custom/lightmachine",
+  "textures": {
+    "all": "inzo:block/lightmachine",
+    "particle": "inzo:block/lightmachine",
+    "0": "inzo:block/lightmachine"
+  },
+  "render_type": "solid"
+}
