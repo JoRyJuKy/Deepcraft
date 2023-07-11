@@ -35,6 +35,7 @@ import net.mcreator.inzo.init.InzoModSounds;
 import net.mcreator.inzo.init.InzoModItems;
 import net.mcreator.inzo.init.InzoModFluids;
 import net.mcreator.inzo.init.InzoModFluidTypes;
+import net.mcreator.inzo.init.InzoModFeatures;
 import net.mcreator.inzo.init.InzoModEntities;
 import net.mcreator.inzo.init.InzoModBlocks;
 
@@ -60,6 +61,7 @@ public class InzoMod {
 		InzoModItems.REGISTRY.register(bus);
 		InzoModEntities.REGISTRY.register(bus);
 
+		InzoModFeatures.REGISTRY.register(bus);
 		InzoModFluids.REGISTRY.register(bus);
 		InzoModFluidTypes.REGISTRY.register(bus);
 

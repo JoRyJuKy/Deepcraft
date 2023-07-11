@@ -16,7 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.inzo.entity.WhirlpoolEntity;
+import net.mcreator.inzo.entity.WhirlpoolEntityEntity;
 import net.mcreator.inzo.entity.ThresherEntity;
 import net.mcreator.inzo.entity.MegalodauntEntity;
 import net.mcreator.inzo.InzoMod;
@@ -32,8 +32,10 @@ public class InzoModEntities {
 			EntityType.Builder.<ThresherEntity>of(ThresherEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ThresherEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<WhirlpoolEntity>> WHIRLPOOL = register("whirlpool", EntityType.Builder.<WhirlpoolEntity>of(WhirlpoolEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-			.setUpdateInterval(3).setCustomClientFactory(WhirlpoolEntity::new).fireImmune().sized(2.8f, 1f));
+	public static final RegistryObject<EntityType<WhirlpoolEntityEntity>> WHIRLPOOL_ENTITY = register("whirlpool_entity",
+			EntityType.Builder.<WhirlpoolEntityEntity>of(WhirlpoolEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WhirlpoolEntityEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -44,7 +46,7 @@ public class InzoModEntities {
 		event.enqueueWork(() -> {
 			MegalodauntEntity.init();
 			ThresherEntity.init();
-			WhirlpoolEntity.init();
+			WhirlpoolEntityEntity.init();
 		});
 	}
 
@@ -52,6 +54,6 @@ public class InzoModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(MEGALODAUNT.get(), MegalodauntEntity.createAttributes().build());
 		event.put(THRESHER.get(), ThresherEntity.createAttributes().build());
-		event.put(WHIRLPOOL.get(), WhirlpoolEntity.createAttributes().build());
+		event.put(WHIRLPOOL_ENTITY.get(), WhirlpoolEntityEntity.createAttributes().build());
 	}
 }

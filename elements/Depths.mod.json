@@ -26,7 +26,7 @@
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
     "portalFrame": {
-      "value": "Blocks.BEDROCK"
+      "value": "Blocks.FLOWING_WATER"
     },
     "portalParticles": {
       "value": "SOUL"

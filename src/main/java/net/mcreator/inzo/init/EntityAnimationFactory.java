@@ -4,7 +4,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
-import net.mcreator.inzo.entity.WhirlpoolEntity;
+import net.mcreator.inzo.entity.WhirlpoolEntityEntity;
 import net.mcreator.inzo.entity.ThresherEntity;
 
 @Mod.EventBusSubscriber
@@ -19,7 +19,7 @@ public class EntityAnimationFactory {
 					syncable.animationprocedure = animation;
 				}
 			}
-			if (event.getEntity() instanceof WhirlpoolEntity syncable) {
+			if (event.getEntity() instanceof WhirlpoolEntityEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

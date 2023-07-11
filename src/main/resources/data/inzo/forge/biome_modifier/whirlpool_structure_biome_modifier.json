@@ -1,19 +1,18 @@
 {
-  "type": "forge:add_spawns",
+  "type": "forge:add_features",
   "biomes": [
     "deep_cold_ocean",
+    "frozen_ocean",
     "warm_ocean",
     "lukewarm_ocean",
     "ocean",
     "deep_lukewarm_ocean",
     "cold_ocean",
+    "river",
     "deep_ocean",
+    "desert",
     "deep_frozen_ocean"
   ],
-  "spawners": {
-    "type": "inzo:whirlpool",
-    "weight": 12,
-    "minCount": 1,
-    "maxCount": 1
-  }
+  "features": "inzo:whirlpool_structure",
+  "step": "surface_structures"
 }
