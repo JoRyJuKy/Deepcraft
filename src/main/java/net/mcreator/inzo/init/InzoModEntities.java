@@ -33,7 +33,7 @@ public class InzoModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<WhirlpoolEntity>> WHIRLPOOL = register("whirlpool", EntityType.Builder.<WhirlpoolEntity>of(WhirlpoolEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-			.setUpdateInterval(3).setCustomClientFactory(WhirlpoolEntity::new).fireImmune().sized(1.6f, 1f));
+			.setUpdateInterval(3).setCustomClientFactory(WhirlpoolEntity::new).fireImmune().sized(2.8f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

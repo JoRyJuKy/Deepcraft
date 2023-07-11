@@ -406,20 +406,6 @@
       }
     },
     {
-      "name": "UseResonanceKey",
-      "type": "keybind",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "use_resonance_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/inzo/network/UseResonanceKeyMessage.java"
-        ]
-      },
-      "path": "~/Bells"
-    },
-    {
       "name": "WhirlpoolPlayerCollidesWithThisEntity",
       "type": "procedure",
       "sortid": 24,
@@ -604,18 +590,22 @@
   ],
   "language_map": {
     "en_us": {
+      "block.inzo.depths_void": "Depths Void",
       "advancements.soul_resonance.title": "Soul Resonance",
-      "key.inzo.use_resonance": "Use Resonance",
-      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
+      "fluid.inzo.depths_void": "Depths Void",
       "subtitles.oscillation": "",
+      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
+      "key.inzo.use_resonance": "Use Resonance",
       "advancements.depthsvisit.title": "The Sound From Below",
       "advancements.thedeep.title": "The deep",
-      "entity.inzo.whirlpool": "Whirlpool",
-      "item.inzo.depths": "Umbral Flint",
       "advancements.depthsvisit.descr": "You feel your soul dragging down like a weight, deeper into the depths.",
+      "item.inzo.depths": "Umbral Flint",
+      "entity.inzo.whirlpool": "Whirlpool",
       "advancements.sharkokiller.title": "Sharko Slayer",
       "item.inzo.umbral_obsidian": "Umbral Obsidian",
       "item.inzo.bell_catalyst": "Resonance Catalyst",
+      "biome.inzo.coral_forest": "Coral Forest",
+      "block.inzo.deep_stone": "Deep Stone",
       "item.inzo.megalodaunt_spawn_egg": "Megalodaunt Spawn Egg",
       "key.inzo.use_resonance_key": "Use Resonance",
       "item.inzo.thresher_spawn_egg": "Thresher Spawn Egg",
@@ -631,6 +621,7 @@
       "item.inzo.resonance_7": "Resonance",
       "item.inzo.resonance_8": "Resonance",
       "subtitles.bell": "Resonance is obtained",
+      "block.inzo.deep_turf": "Deep Turf ",
       "subtitles.megalodauntroar": "Megalodaunt Roars",
       "entity.inzo.megalodaunt": "Megalodaunt",
       "entity.inzo.thresher": "Thresher",
