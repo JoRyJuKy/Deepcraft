@@ -32,12 +32,14 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.inzo.init.InzoModSounds;
+import net.mcreator.inzo.init.InzoModMenus;
 import net.mcreator.inzo.init.InzoModItems;
 import net.mcreator.inzo.init.InzoModFluids;
 import net.mcreator.inzo.init.InzoModFluidTypes;
 import net.mcreator.inzo.init.InzoModFeatures;
 import net.mcreator.inzo.init.InzoModEntities;
 import net.mcreator.inzo.init.InzoModBlocks;
+import net.mcreator.inzo.init.InzoModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -60,10 +62,12 @@ public class InzoMod {
 		InzoModBlocks.REGISTRY.register(bus);
 		InzoModItems.REGISTRY.register(bus);
 		InzoModEntities.REGISTRY.register(bus);
-
+		InzoModBlockEntities.REGISTRY.register(bus);
 		InzoModFeatures.REGISTRY.register(bus);
 		InzoModFluids.REGISTRY.register(bus);
 		InzoModFluidTypes.REGISTRY.register(bus);
+
+		InzoModMenus.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
 	}

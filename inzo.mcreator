@@ -537,6 +537,24 @@
       }
     },
     {
+      "name": "WhirlpoolEntity",
+      "type": "animatedentity",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whirlpool_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/entity/WhirlpoolEntityEntity.java",
+          "src/main/resources/assets/inzo/models/item/whirlpool_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/inzo/entity/model/WhirlpoolEntityModel.java",
+          "src/main/java/net/mcreator/inzo/client/renderer/WhirlpoolEntityRenderer.java",
+          "src/main/resources/data/inzo/forge/biome_modifier/whirlpool_entity_biome_modifier.json"
+        ]
+      },
+      "path": "~/Whirlpool"
+    },
+    {
       "name": "WhirlpoolStructure",
       "type": "structure",
       "sortid": 31,
@@ -554,22 +572,175 @@
       "path": "~/Whirlpool"
     },
     {
-      "name": "WhirlpoolEntity",
-      "type": "animatedentity",
+      "name": "VoidtouchedDeepstone",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidtouched_deepstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/voidtouched_deepstone.json",
+          "src/main/resources/assets/inzo/models/block/voidtouched_deepstone.json",
+          "src/main/java/net/mcreator/inzo/block/VoidtouchedDeepstoneBlock.java",
+          "src/main/resources/assets/inzo/blockstates/voidtouched_deepstone.json"
+        ]
+      },
+      "path": "~/The Depths"
+    },
+    {
+      "name": "RadiantShardRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiant_shard_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/inzo/recipes/radiant_shard_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LightCoreRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_core_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/inzo/recipes/light_core_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Lens",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lens",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/blockstates/lens.json",
+          "src/main/resources/assets/inzo/models/block/lens.json",
+          "src/main/java/net/mcreator/inzo/block/entity/LensBlockEntity.java",
+          "src/main/java/net/mcreator/inzo/block/LensBlock.java",
+          "src/main/resources/assets/inzo/models/item/lens.json"
+        ]
+      }
+    },
+    {
+      "name": "Lensgui",
+      "type": "gui",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lensgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/world/inventory/LensguiMenu.java",
+          "src/main/java/net/mcreator/inzo/client/gui/LensguiScreen.java",
+          "src/main/java/net/mcreator/inzo/network/LensguiButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "LensFunction",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lens_function",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/procedures/LensFunctionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidstoneShard",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidstone_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/models/item/voidstone_shard.json",
+          "src/main/java/net/mcreator/inzo/item/VoidstoneShardItem.java"
+        ]
+      },
+      "path": "~/The Depths"
+    },
+    {
+      "name": "LightCore",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_core",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/item/LightCoreItem.java",
+          "src/main/resources/assets/inzo/models/item/light_core.json"
+        ]
+      }
+    },
+    {
+      "name": "UmbralStone",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "umbral_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/inzo/worldgen/configured_feature/umbral_stone.json",
+          "src/main/resources/assets/inzo/models/block/umbral_stone.json",
+          "src/main/java/net/mcreator/inzo/world/features/ores/UmbralStoneFeature.java",
+          "src/main/resources/assets/inzo/models/item/umbral_stone.json",
+          "src/main/resources/assets/inzo/blockstates/umbral_stone.json",
+          "src/main/resources/data/inzo/worldgen/placed_feature/umbral_stone.json",
+          "src/main/java/net/mcreator/inzo/block/UmbralStoneBlock.java",
+          "src/main/resources/data/inzo/forge/biome_modifier/umbral_stone_biome_modifier.json"
+        ]
+      },
+      "path": "~/The Depths"
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "whirlpool_entity",
+      "registry_name": "dirt_blocks",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/inzo/entity/WhirlpoolEntityEntity.java",
-          "src/main/resources/assets/inzo/models/item/whirlpool_entity_spawn_egg.json",
-          "src/main/java/net/mcreator/inzo/entity/model/WhirlpoolEntityModel.java",
-          "src/main/java/net/mcreator/inzo/client/renderer/WhirlpoolEntityRenderer.java",
-          "src/main/resources/data/inzo/forge/biome_modifier/whirlpool_entity_biome_modifier.json"
+          "src/main/resources/data/minecraft/tags/blocks/dirt.json"
         ]
-      },
-      "path": "~/Whirlpool"
+      }
+    },
+    {
+      "name": "RadiantShard",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiant_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/item/RadiantShardItem.java",
+          "src/main/resources/assets/inzo/models/item/radiant_shard.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -609,12 +780,11 @@
   "language_map": {
     "en_us": {
       "block.inzo.depths_void": "Depths Void",
-      "item.inzo.whirlpool_entity_spawn_egg": "Whirlpool Spawn Egg",
       "advancements.soul_resonance.title": "Soul Resonance",
       "fluid.inzo.depths_void": "Depths Void",
-      "subtitles.oscillation": "",
-      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
       "key.inzo.use_resonance": "Use Resonance",
+      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
+      "subtitles.oscillation": "",
       "advancements.depthsvisit.title": "The Sound From Below",
       "advancements.thedeep.title": "The deep",
       "advancements.depthsvisit.descr": "You feel your soul dragging down like a weight, deeper into the depths.",
@@ -629,7 +799,6 @@
       "item.inzo.thresher_spawn_egg": "Thresher Spawn Egg",
       "advancements.sharkokiller.descr": "Kill a Megalodaunt",
       "advancements.thedeep.descr": "Desperately try to escape the horrors lurking just beneath the waves.",
-      "entity.inzo.whirlpool_entity": "Whirlpool",
       "advancements.soul_resonance.descr": "Your soul has resonated with the Song, now producing its own distinct Tone. This resonance has manifested as the instrument now kept at your hip.",
       "item.inzo.resonance_2": "Resonance",
       "item.inzo.resonance_3": "Resonance",
@@ -662,11 +831,15 @@
         "children": []
       },
       {
+        "name": "Whirlpool",
+        "children": []
+      },
+      {
         "name": "WIP",
         "children": []
       },
       {
-        "name": "Whirlpool",
+        "name": "The Depths",
         "children": []
       }
     ]

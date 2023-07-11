@@ -16,7 +16,7 @@ import java.util.Collections;
 
 public class DeepTurfBlock extends Block {
 	public DeepTurfBlock() {
-		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.SAND).strength(1f, 10f));
 	}
 
 	@Override

@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.inzo.item.VoidstoneShardItem;
 import net.mcreator.inzo.item.UmbralObsidianItem;
 import net.mcreator.inzo.item.Resonance8Item;
 import net.mcreator.inzo.item.Resonance7Item;
@@ -22,6 +23,8 @@ import net.mcreator.inzo.item.Resonance4Item;
 import net.mcreator.inzo.item.Resonance3Item;
 import net.mcreator.inzo.item.Resonance2Item;
 import net.mcreator.inzo.item.Resonance1Item;
+import net.mcreator.inzo.item.RadiantShardItem;
+import net.mcreator.inzo.item.LightCoreItem;
 import net.mcreator.inzo.item.DepthsItem;
 import net.mcreator.inzo.item.BellCatalystItem;
 import net.mcreator.inzo.item.AwakenedResonanceCatalystItem;
@@ -46,6 +49,12 @@ public class InzoModItems {
 	public static final RegistryObject<Item> DEEP_TURF = block(InzoModBlocks.DEEP_TURF);
 	public static final RegistryObject<Item> DEEP_STONE = block(InzoModBlocks.DEEP_STONE);
 	public static final RegistryObject<Item> WHIRLPOOL_ENTITY_SPAWN_EGG = REGISTRY.register("whirlpool_entity_spawn_egg", () -> new ForgeSpawnEggItem(InzoModEntities.WHIRLPOOL_ENTITY, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> VOIDSTONE_SHARD = REGISTRY.register("voidstone_shard", () -> new VoidstoneShardItem());
+	public static final RegistryObject<Item> VOIDTOUCHED_DEEPSTONE = block(InzoModBlocks.VOIDTOUCHED_DEEPSTONE);
+	public static final RegistryObject<Item> UMBRAL_STONE = block(InzoModBlocks.UMBRAL_STONE);
+	public static final RegistryObject<Item> LIGHT_CORE = REGISTRY.register("light_core", () -> new LightCoreItem());
+	public static final RegistryObject<Item> LENS = block(InzoModBlocks.LENS);
+	public static final RegistryObject<Item> RADIANT_SHARD = REGISTRY.register("radiant_shard", () -> new RadiantShardItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

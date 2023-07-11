@@ -10,10 +10,10 @@
       "value": "CUSTOM:DeepStone"
     },
     "underwaterBlock": {
-      "value": ""
+      "value": "CUSTOM:VoidtouchedDeepstone"
     },
     "ambientSound": {
-      "value": ""
+      "value": "CUSTOM:oscillation"
     },
     "additionsSound": {
       "value": ""
@@ -66,13 +66,12 @@
       "value": "Blocks.DEAD_BUBBLE_CORAL_BLOCK"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "defaultFeatures": [
-      "Caves",
       "Ores"
     ],
     "spawnStronghold": false,

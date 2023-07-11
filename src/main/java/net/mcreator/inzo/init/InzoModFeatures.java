@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import net.minecraft.world.level.levelgen.feature.Feature;
 
+import net.mcreator.inzo.world.features.ores.UmbralStoneFeature;
 import net.mcreator.inzo.world.features.WhirlpoolStructureFeature;
 import net.mcreator.inzo.InzoMod;
 
@@ -18,4 +19,5 @@ import net.mcreator.inzo.InzoMod;
 public class InzoModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, InzoMod.MODID);
 	public static final RegistryObject<Feature<?>> WHIRLPOOL_STRUCTURE = REGISTRY.register("whirlpool_structure", WhirlpoolStructureFeature::new);
+	public static final RegistryObject<Feature<?>> UMBRAL_STONE = REGISTRY.register("umbral_stone", UmbralStoneFeature::new);
 }

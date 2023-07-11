@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "inzo:deep_stone"
+    "inzo:deep_stone",
+    "inzo:voidtouched_deepstone",
+    "inzo:umbral_stone",
+    "inzo:lens"
   ]
 }
