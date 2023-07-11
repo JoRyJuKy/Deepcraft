@@ -12,7 +12,7 @@
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
-    "modelWidth": 1.6,
+    "modelWidth": 2.8,
     "modelHeight": 1.0,
     "modelShadowSize": 0.0,
     "mountedYOffset": 0.0,
@@ -67,7 +67,7 @@
     "inventoryStackSize": 64,
     "deathTime": 20,
     "lerp": 4,
-    "disableCollisions": false,
+    "disableCollisions": true,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
@@ -99,7 +99,7 @@
     "stepSound": {
       "value": ""
     },
-    "onRightClickedOn": {
+    "onPlayerCollidesWith": {
       "name": "WhirlpoolPlayerCollidesWithThisEntity"
     },
     "hasAI": true,

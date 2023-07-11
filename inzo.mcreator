@@ -87,8 +87,7 @@
           "src/main/resources/assets/inzo/models/block/depths_portal_ew.json",
           "src/main/java/net/mcreator/inzo/item/DepthsItem.java"
         ]
-      },
-      "path": "~/The Depths"
+      }
     },
     {
       "name": "BellCatalyst",
@@ -408,20 +407,6 @@
       "path": "~/Mobs"
     },
     {
-      "name": "UseResonanceKey",
-      "type": "keybind",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "use_resonance_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/inzo/network/UseResonanceKeyMessage.java"
-        ]
-      },
-      "path": "~/Bells"
-    },
-    {
       "name": "WhirlpoolPlayerCollidesWithThisEntity",
       "type": "procedure",
       "sortid": 24,
@@ -488,8 +473,7 @@
           "src/main/resources/assets/inzo/blockstates/deep_turf.json",
           "src/main/resources/assets/inzo/models/item/deep_turf.json"
         ]
-      },
-      "path": "~/The Depths"
+      }
     },
     {
       "name": "DeepStone",
@@ -505,8 +489,7 @@
           "src/main/resources/assets/inzo/blockstates/deep_stone.json",
           "src/main/java/net/mcreator/inzo/block/DeepStoneBlock.java"
         ]
-      },
-      "path": "~/The Depths"
+      }
     },
     {
       "name": "DepthsVoid",
@@ -524,8 +507,7 @@
           "src/main/java/net/mcreator/inzo/fluid/DepthsVoidFluid.java",
           "src/main/java/net/mcreator/inzo/fluid/types/DepthsVoidFluidType.java"
         ]
-      },
-      "path": "~/The Depths"
+      }
     },
     {
       "name": "DepthsVoidMobplayerCollidesBlock",
@@ -556,8 +538,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/The Depths"
+      }
     },
     {
       "name": "CoralForest",
@@ -575,8 +556,7 @@
           "src/main/resources/data/inzo/worldgen/configured_feature/coral_forest_tree.json",
           "src/main/java/net/mcreator/inzo/world/features/treedecorators/CoralForestLeaveDecorator.java"
         ]
-      },
-      "path": "~/The Depths"
+      }
     },
     {
       "name": "DirtBlocks",
