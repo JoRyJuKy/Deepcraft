@@ -15,5 +15,5 @@
   "height": 256,
   "monster_spawn_light_level": 11,
   "monster_spawn_block_light_limit": 15,
-  "effects": "minecraft:the_nether"
+  "effects": "minecraft:overworld"
 }

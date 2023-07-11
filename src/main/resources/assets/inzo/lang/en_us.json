@@ -1,5 +1,6 @@
 {
   "block.inzo.depths_void": "Depths Void",
+  "item.inzo.voidstone_shard": "Voidstone Shard",
   "advancements.soul_resonance.title": "Soul Resonance",
   "fluid.inzo.depths_void": "Depths Void",
   "key.inzo.use_resonance": "Use Resonance",
@@ -15,6 +16,7 @@
   "item.inzo.bell_catalyst": "Resonance Catalyst",
   "biome.inzo.coral_forest": "Coral Forest",
   "block.inzo.deep_stone": "Deep Stone",
+  "block.inzo.voidtouched_deepstone": "Voidtouched Deepstone",
   "item.inzo.megalodaunt_spawn_egg": "Megalodaunt Spawn Egg",
   "key.inzo.use_resonance_key": "Use Resonance",
   "item.inzo.thresher_spawn_egg": "Thresher Spawn Egg",

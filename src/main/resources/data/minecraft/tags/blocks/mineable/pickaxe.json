@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "inzo:deep_stone"
+    "inzo:deep_stone",
+    "inzo:voidtouched_deepstone"
   ]
 }

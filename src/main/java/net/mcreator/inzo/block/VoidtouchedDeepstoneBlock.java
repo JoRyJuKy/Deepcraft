@@ -8,17 +8,28 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.inzo.init.InzoModItems;
 
 import java.util.List;
 import java.util.Collections;
 
-public class DeepStoneBlock extends Block {
-	public DeepStoneBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 20f).requiresCorrectToolForDrops());
+public class VoidtouchedDeepstoneBlock extends Block {
+	public VoidtouchedDeepstoneBlock() {
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(100f, 100000000f).requiresCorrectToolForDrops());
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("At the edge of light's grasp"));
+		list.add(Component.literal("this is all that remains."));
 	}
 
 	@Override
@@ -29,7 +40,7 @@ public class DeepStoneBlock extends Block {
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
 		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 1;
+			return tieredItem.getTier().getLevel() >= 3;
 		return false;
 	}
 
@@ -38,6 +49,6 @@ public class DeepStoneBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(InzoModItems.VOIDSTONE_SHARD.get(), 3));
 	}
 }

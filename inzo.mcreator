@@ -9,10 +9,10 @@
       "registry_name": "megalodaunt",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/inzo/entity/MegalodauntEntity.java",
-          "src/main/resources/assets/inzo/models/item/megalodaunt_spawn_egg.json",
           "src/main/java/net/mcreator/inzo/client/renderer/MegalodauntRenderer.java",
-          "src/main/resources/data/inzo/forge/biome_modifier/megalodaunt_biome_modifier.json"
+          "src/main/resources/data/inzo/forge/biome_modifier/megalodaunt_biome_modifier.json",
+          "src/main/java/net/mcreator/inzo/entity/MegalodauntEntity.java",
+          "src/main/resources/assets/inzo/models/item/megalodaunt_spawn_egg.json"
         ]
       },
       "path": "~/Mobs"
@@ -26,8 +26,8 @@
       "registry_name": "umbral_obsidian",
       "metadata": {
         "files": [
-          "src/main/resources/assets/inzo/models/item/umbral_obsidian.json",
-          "src/main/java/net/mcreator/inzo/item/UmbralObsidianItem.java"
+          "src/main/java/net/mcreator/inzo/item/UmbralObsidianItem.java",
+          "src/main/resources/assets/inzo/models/item/umbral_obsidian.json"
         ]
       }
     },
@@ -70,7 +70,7 @@
       "name": "Depths",
       "type": "dimension",
       "sortid": 4,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "depths",
       "metadata": {
@@ -207,8 +207,8 @@
       "registry_name": "resonance_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/inzo/models/item/resonance_1.json",
-          "src/main/java/net/mcreator/inzo/item/Resonance1Item.java"
+          "src/main/java/net/mcreator/inzo/item/Resonance1Item.java",
+          "src/main/resources/assets/inzo/models/item/resonance_1.json"
         ]
       },
       "path": "~/WIP"
@@ -312,8 +312,8 @@
       "registry_name": "resonance_8",
       "metadata": {
         "files": [
-          "src/main/resources/assets/inzo/models/item/resonance_8.json",
-          "src/main/java/net/mcreator/inzo/item/Resonance8Item.java"
+          "src/main/java/net/mcreator/inzo/item/Resonance8Item.java",
+          "src/main/resources/assets/inzo/models/item/resonance_8.json"
         ]
       },
       "path": "~/WIP"
@@ -399,8 +399,8 @@
       "registry_name": "thresher",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/inzo/entity/model/ThresherModel.java",
           "src/main/java/net/mcreator/inzo/entity/ThresherEntity.java",
+          "src/main/java/net/mcreator/inzo/entity/model/ThresherModel.java",
           "src/main/java/net/mcreator/inzo/client/renderer/ThresherRenderer.java",
           "src/main/resources/assets/inzo/models/item/thresher_spawn_egg.json"
         ]
@@ -452,10 +452,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/inzo/models/item/whirlpool_spawn_egg.json",
-          "src/main/java/net/mcreator/inzo/entity/model/WhirlpoolModel.java",
-          "src/main/resources/data/inzo/forge/biome_modifier/whirlpool_biome_modifier.json",
+          "src/main/java/net/mcreator/inzo/entity/WhirlpoolEntity.java",
           "src/main/java/net/mcreator/inzo/client/renderer/WhirlpoolRenderer.java",
-          "src/main/java/net/mcreator/inzo/entity/WhirlpoolEntity.java"
+          "src/main/java/net/mcreator/inzo/entity/model/WhirlpoolModel.java",
+          "src/main/resources/data/inzo/forge/biome_modifier/whirlpool_biome_modifier.json"
         ]
       },
       "path": "~/Mobs"
@@ -549,7 +549,7 @@
       "name": "CoralForest",
       "type": "biome",
       "sortid": 30,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "coral_forest",
       "metadata": {
@@ -576,6 +576,38 @@
           "src/main/resources/data/minecraft/tags/blocks/dirt.json"
         ]
       }
+    },
+    {
+      "name": "VoidstoneShard",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidstone_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/item/VoidstoneShardItem.java",
+          "src/main/resources/assets/inzo/models/item/voidstone_shard.json"
+        ]
+      },
+      "path": "~/The Depths"
+    },
+    {
+      "name": "VoidtouchedDeepstone",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidtouched_deepstone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/inzo/block/VoidtouchedDeepstoneBlock.java",
+          "src/main/resources/assets/inzo/models/item/voidtouched_deepstone.json",
+          "src/main/resources/assets/inzo/blockstates/voidtouched_deepstone.json",
+          "src/main/resources/assets/inzo/models/block/voidtouched_deepstone.json"
+        ]
+      },
+      "path": "~/The Depths"
     }
   ],
   "variable_elements": [
@@ -615,6 +647,7 @@
   "language_map": {
     "en_us": {
       "block.inzo.depths_void": "Depths Void",
+      "item.inzo.voidstone_shard": "Voidstone Shard",
       "advancements.soul_resonance.title": "Soul Resonance",
       "fluid.inzo.depths_void": "Depths Void",
       "key.inzo.use_resonance": "Use Resonance",
@@ -630,6 +663,7 @@
       "item.inzo.bell_catalyst": "Resonance Catalyst",
       "biome.inzo.coral_forest": "Coral Forest",
       "block.inzo.deep_stone": "Deep Stone",
+      "block.inzo.voidtouched_deepstone": "Voidtouched Deepstone",
       "item.inzo.megalodaunt_spawn_egg": "Megalodaunt Spawn Egg",
       "key.inzo.use_resonance_key": "Use Resonance",
       "item.inzo.thresher_spawn_egg": "Thresher Spawn Egg",

@@ -209,7 +209,7 @@
                       {
                         "type": "minecraft:block",
                         "result_state": {
-                          "Name": "inzo:deep_stone"
+                          "Name": "inzo:voidtouched_deepstone"
                         }
                       }
                     ]

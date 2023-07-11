@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.inzo.item.VoidstoneShardItem;
 import net.mcreator.inzo.item.UmbralObsidianItem;
 import net.mcreator.inzo.item.Resonance8Item;
 import net.mcreator.inzo.item.Resonance7Item;
@@ -46,6 +47,8 @@ public class InzoModItems {
 	public static final RegistryObject<Item> WHIRLPOOL_SPAWN_EGG = REGISTRY.register("whirlpool_spawn_egg", () -> new ForgeSpawnEggItem(InzoModEntities.WHIRLPOOL, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> DEEP_TURF = block(InzoModBlocks.DEEP_TURF);
 	public static final RegistryObject<Item> DEEP_STONE = block(InzoModBlocks.DEEP_STONE);
+	public static final RegistryObject<Item> VOIDSTONE_SHARD = REGISTRY.register("voidstone_shard", () -> new VoidstoneShardItem());
+	public static final RegistryObject<Item> VOIDTOUCHED_DEEPSTONE = block(InzoModBlocks.VOIDTOUCHED_DEEPSTONE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

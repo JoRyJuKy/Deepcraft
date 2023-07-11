@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.inzo.block.VoidtouchedDeepstoneBlock;
 import net.mcreator.inzo.block.DepthsVoidBlock;
 import net.mcreator.inzo.block.DepthsPortalBlock;
 import net.mcreator.inzo.block.DeepTurfBlock;
@@ -22,4 +23,5 @@ public class InzoModBlocks {
 	public static final RegistryObject<Block> DEEP_TURF = REGISTRY.register("deep_turf", () -> new DeepTurfBlock());
 	public static final RegistryObject<Block> DEEP_STONE = REGISTRY.register("deep_stone", () -> new DeepStoneBlock());
 	public static final RegistryObject<Block> DEPTHS_VOID = REGISTRY.register("depths_void", () -> new DepthsVoidBlock());
+	public static final RegistryObject<Block> VOIDTOUCHED_DEEPSTONE = REGISTRY.register("voidtouched_deepstone", () -> new VoidtouchedDeepstoneBlock());
 }

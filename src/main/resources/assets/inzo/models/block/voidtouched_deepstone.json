@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "inzo:block/voidstone",
+    "up": "inzo:block/voidstone",
+    "north": "inzo:block/voidstone",
+    "east": "inzo:block/voidstone",
+    "south": "inzo:block/voidstone",
+    "west": "inzo:block/voidstone",
+    "particle": "inzo:block/voidstone"
+  },
+  "render_type": "solid"
+}
