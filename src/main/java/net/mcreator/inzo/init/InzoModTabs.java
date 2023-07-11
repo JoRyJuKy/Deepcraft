@@ -39,6 +39,7 @@ public class InzoModTabs {
 			tabData.accept(InzoModBlocks.DEEP_TURF.get().asItem());
 			tabData.accept(InzoModBlocks.DEEP_STONE.get().asItem());
 			tabData.accept(InzoModBlocks.VOIDTOUCHED_DEEPSTONE.get().asItem());
+			tabData.accept(InzoModBlocks.UMBRAL_STONE.get().asItem());
 		}
 	}
 }

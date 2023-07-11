@@ -49,6 +49,7 @@ public class InzoModItems {
 	public static final RegistryObject<Item> DEEP_STONE = block(InzoModBlocks.DEEP_STONE);
 	public static final RegistryObject<Item> VOIDSTONE_SHARD = REGISTRY.register("voidstone_shard", () -> new VoidstoneShardItem());
 	public static final RegistryObject<Item> VOIDTOUCHED_DEEPSTONE = block(InzoModBlocks.VOIDTOUCHED_DEEPSTONE);
+	public static final RegistryObject<Item> UMBRAL_STONE = block(InzoModBlocks.UMBRAL_STONE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

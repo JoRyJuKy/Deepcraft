@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "inzo:block/umbralframingside",
+    "up": "inzo:block/umbralframingside",
+    "north": "inzo:block/umbralframingside",
+    "east": "inzo:block/umbralframingside",
+    "south": "inzo:block/umbralframingside",
+    "west": "inzo:block/umbralframingside",
+    "particle": "inzo:block/umbralframingside"
+  },
+  "render_type": "solid"
+}

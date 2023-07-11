@@ -608,6 +608,27 @@
         ]
       },
       "path": "~/The Depths"
+    },
+    {
+      "name": "UmbralStone",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "umbral_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/inzo/blockstates/umbral_stone.json",
+          "src/main/resources/assets/inzo/models/block/umbral_stone.json",
+          "src/main/java/net/mcreator/inzo/world/features/ores/UmbralStoneFeature.java",
+          "src/main/resources/data/inzo/worldgen/configured_feature/umbral_stone.json",
+          "src/main/resources/assets/inzo/models/item/umbral_stone.json",
+          "src/main/java/net/mcreator/inzo/block/UmbralStoneBlock.java",
+          "src/main/resources/data/inzo/worldgen/placed_feature/umbral_stone.json",
+          "src/main/resources/data/inzo/forge/biome_modifier/umbral_stone_biome_modifier.json"
+        ]
+      },
+      "path": "~/The Depths"
     }
   ],
   "variable_elements": [
@@ -674,6 +695,7 @@
       "item.inzo.resonance_2": "Resonance",
       "item.inzo.resonance_3": "Resonance",
       "item.inzo.resonance_4": "Resonance",
+      "block.inzo.umbral_stone": "Umbral Stone",
       "item.inzo.resonance_5": "Resonance",
       "item.inzo.resonance_6": "Resonance",
       "item.inzo.resonance_7": "Resonance",
