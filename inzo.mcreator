@@ -70,7 +70,7 @@
       "name": "Depths",
       "type": "dimension",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "depths",
       "metadata": {
@@ -87,7 +87,8 @@
           "src/main/resources/assets/inzo/models/block/depths_portal_ew.json",
           "src/main/java/net/mcreator/inzo/item/DepthsItem.java"
         ]
-      }
+      },
+      "path": "~/The Depths"
     },
     {
       "name": "BellCatalyst",
@@ -473,7 +474,8 @@
           "src/main/resources/assets/inzo/blockstates/deep_turf.json",
           "src/main/resources/assets/inzo/models/item/deep_turf.json"
         ]
-      }
+      },
+      "path": "~/The Depths"
     },
     {
       "name": "DeepStone",
@@ -489,7 +491,8 @@
           "src/main/resources/assets/inzo/blockstates/deep_stone.json",
           "src/main/java/net/mcreator/inzo/block/DeepStoneBlock.java"
         ]
-      }
+      },
+      "path": "~/The Depths"
     },
     {
       "name": "DepthsVoid",
@@ -507,7 +510,8 @@
           "src/main/java/net/mcreator/inzo/fluid/DepthsVoidFluid.java",
           "src/main/java/net/mcreator/inzo/fluid/types/DepthsVoidFluidType.java"
         ]
-      }
+      },
+      "path": "~/The Depths"
     },
     {
       "name": "DepthsVoidMobplayerCollidesBlock",
@@ -538,13 +542,14 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/The Depths"
     },
     {
       "name": "CoralForest",
       "type": "biome",
       "sortid": 30,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "coral_forest",
       "metadata": {
@@ -556,7 +561,8 @@
           "src/main/resources/data/inzo/worldgen/configured_feature/coral_forest_tree.json",
           "src/main/java/net/mcreator/inzo/world/features/treedecorators/CoralForestLeaveDecorator.java"
         ]
-      }
+      },
+      "path": "~/The Depths"
     },
     {
       "name": "DirtBlocks",
@@ -611,9 +617,9 @@
       "block.inzo.depths_void": "Depths Void",
       "advancements.soul_resonance.title": "Soul Resonance",
       "fluid.inzo.depths_void": "Depths Void",
-      "subtitles.oscillation": "",
-      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
       "key.inzo.use_resonance": "Use Resonance",
+      "item.inzo.awakened_resonance_catalyst": "Awakened Resonance Catalyst",
+      "subtitles.oscillation": "",
       "advancements.depthsvisit.title": "The Sound From Below",
       "advancements.thedeep.title": "The deep",
       "entity.inzo.whirlpool": "Whirlpool",
